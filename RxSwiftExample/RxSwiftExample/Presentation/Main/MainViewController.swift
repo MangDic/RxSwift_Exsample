@@ -17,6 +17,7 @@ class MainViewController: UIViewController {
     let menuArray = [VCData(title: "데이터 전달 [델리게이트 패턴]", vc: DelegateFirstViewController()),
                      VCData(title: "데이터 전달 [클로저]", vc: ClosureFirstViewController()),
                      VCData(title: "데이터 전달 [RxSwift]", vc: SendDataViewController()),
+                     VCData(title: "Observable vs Subject", vc: Observable_Subject_ViewController()),
                      VCData(title: "Rx + TextField", vc: RxAndTextFieldViewController()),
                      VCData(title: "NewsList [MVC]", vc: MVC_ViewController()),
                      VCData(title: "NewsList [MVVM]", vc: MVVM_ViewController())]

@@ -34,6 +34,8 @@
 		C320D2E02873C49400DC26CF /* MVVM_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C320D2DF2873C49400DC26CF /* MVVM_ViewController.swift */; };
 		C320D2E22873CD1500DC26CF /* MVVM_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C320D2E12873CD1500DC26CF /* MVVM_View.swift */; };
 		C320D2E42873CE6D00DC26CF /* MVVM_ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C320D2E32873CE6D00DC26CF /* MVVM_ViewModel.swift */; };
+		C320D2EB28767F2C00DC26CF /* Observable_Subject_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C320D2EA28767F2C00DC26CF /* Observable_Subject_ViewController.swift */; };
+		C320D2ED2876940F00DC26CF /* Observable_Subject_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C320D2EC2876940F00DC26CF /* Observable_Subject_View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +83,8 @@
 		C320D2DF2873C49400DC26CF /* MVVM_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM_ViewController.swift; sourceTree = "<group>"; };
 		C320D2E12873CD1500DC26CF /* MVVM_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM_View.swift; sourceTree = "<group>"; };
 		C320D2E32873CE6D00DC26CF /* MVVM_ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM_ViewModel.swift; sourceTree = "<group>"; };
+		C320D2EA28767F2C00DC26CF /* Observable_Subject_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable_Subject_ViewController.swift; sourceTree = "<group>"; };
+		C320D2EC2876940F00DC26CF /* Observable_Subject_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable_Subject_View.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +167,7 @@
 		C320D2A3286D416000DC26CF /* SubView */ = {
 			isa = PBXGroup;
 			children = (
+				C320D2E928767EF900DC26CF /* Observable vs Subject */,
 				C320D2C82872D57B00DC26CF /* DelegatePatternData */,
 				C320D2C92872D59E00DC26CF /* ClosureData */,
 				C320D2CE2872D8C700DC26CF /* RxData */,
@@ -271,6 +276,15 @@
 				C320D273286D39E800DC26CF /* LaunchScreen.storyboard */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C320D2E928767EF900DC26CF /* Observable vs Subject */ = {
+			isa = PBXGroup;
+			children = (
+				C320D2EA28767F2C00DC26CF /* Observable_Subject_ViewController.swift */,
+				C320D2EC2876940F00DC26CF /* Observable_Subject_View.swift */,
+			);
+			path = "Observable vs Subject";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -424,11 +438,13 @@
 				C320D2A5286D416E00DC26CF /* RxAndTextFieldViewController.swift in Sources */,
 				C320D2DA2873C0D800DC26CF /* NewsCell.swift in Sources */,
 				C320D2CD2872D60200DC26CF /* ClosureSecondViewController.swift in Sources */,
+				C320D2EB28767F2C00DC26CF /* Observable_Subject_ViewController.swift in Sources */,
 				C320D2DD2873C45300DC26CF /* NetworkController.swift in Sources */,
 				C320D2D02872DBD600DC26CF /* DeliveryDataProtocol.swift in Sources */,
 				C320D2CB2872D5BC00DC26CF /* ClosureFirstViewController.swift in Sources */,
 				C320D2C42872D07800DC26CF /* DelegateFirstViewController.swift in Sources */,
 				C320D26D286D39E400DC26CF /* MainViewController.swift in Sources */,
+				C320D2ED2876940F00DC26CF /* Observable_Subject_View.swift in Sources */,
 				C320D2B0286E749800DC26CF /* Int+.swift in Sources */,
 				C320D269286D39E400DC26CF /* AppDelegate.swift in Sources */,
 				C320D2D62873B93B00DC26CF /* MVC_ViewController.swift in Sources */,
