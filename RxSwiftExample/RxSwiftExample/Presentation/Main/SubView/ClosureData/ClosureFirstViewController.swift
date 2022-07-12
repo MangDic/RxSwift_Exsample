@@ -26,12 +26,6 @@ class ClosureFirstViewController: UIViewController {
         present(secondVC, animated: true)
     }
     
-    // MARK: Delevery Protocol Method
-    func delvery(_ data: String) {
-        print("델리게이트 패턴으로 받은 데이터는 \(data) 입니다")
-        self.recievedLabel.text = data
-    }
-    
     // MARK: View
     lazy var recievedLabel = UILabel().then {
         $0.text = "클로저로 받은 데이터"
