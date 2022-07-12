@@ -24,7 +24,8 @@ class RxAndTextFieldViewController: UIViewController {
     // MARK: Binding
     fileprivate func bind() {
         myTextField.rx.text
-            .subscribe(onNext: { text in
+            .subscribe(onNext: { [weak self] text in
+                guard let `self` = self else { return }
                 guard let text = text else { return }
                 self.inputLabel.text = "입력한 텍스트 : \(text)"
                 self.warningLabel.text = self.validateStringCount(text: text) ? "Great!" : "3글자 이상 입력하세요!"

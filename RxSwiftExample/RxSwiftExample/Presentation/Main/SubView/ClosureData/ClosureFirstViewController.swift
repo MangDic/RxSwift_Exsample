@@ -20,7 +20,8 @@ class ClosureFirstViewController: UIViewController {
     }
     
     @objc func didTapButton(_ sender: UIButton) {
-        secondVC.dataSendClosure = { data in
+        secondVC.dataSendClosure = { [weak self] data in
+            guard let `self` = self else { return }
             self.recievedLabel.text = data
         }
         present(secondVC, animated: true)

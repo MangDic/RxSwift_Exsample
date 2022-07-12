@@ -24,12 +24,14 @@ class SendDataViewController: UIViewController {
     // MARK: Binding
     fileprivate func bind() {
         moveButton.rx.tap
-            .subscribe(onNext: {
+            .subscribe(onNext: { [weak self] in
+                guard let `self` = self else { return }
                 AppDelegate.shared.pushViewController(self.nextVC, animated: true)
             }).disposed(by: disposeBag)
         
         nextVC.textRelay.subscribe(onNext: { [weak self] text in
-            if text != "" { self?.myLabel.text = text }
+            guard let `self` = self else { return }
+            if text != "" { self.myLabel.text = text }
         }).disposed(by: disposeBag)
     }
     
